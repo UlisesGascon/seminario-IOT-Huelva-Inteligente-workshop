@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>LED RGB</title>
+  <style>
+	#led{
+		width:250px;
+		height: 250px;
+		border-radius: 100%;		
+		background: black;
+		  display: block;
+
+	}
+  </style>
+</head>
+<body>
+	<div>
+		<h1>RGB desde Arduino</h1>
+		<div id="led"></div>
+		<div id="datos_led"></div>
+	</div>
+
+	<!-- FIREBASE -->
+	<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+	<script>
+
+(function(){
+	var ref = new Firebase("https://talleriot.firebaseio.com/datos");
+	
+	ref.on("value", function(snapshot) {
+		var datos = snapshot.val();
+		console.log(datos);
+
+		document.getElementById("led").style.backgroundColor = 'rgb('+datos.rojo+','+datos.verde+','+datos.azul+')';
+
+		document.getElementById("datos_led").innerHTML = "<h3>RGB ("+datos.rojo+", "+datos.verde+", "+datos.azul+")</h3>"
+
+	}, function (errorObject) {
+	document.body.style.display = "";
+	  console.log("ERROR de lectura: " + errorObject.code);
+	});
+})();
+	</script>
+</body>
+</html>
+

@@ -1,0 +1,15 @@
+{
+  "name": "ledrgb",
+  "version": "1.0.0",
+  "description": "Un led RGB conectado a Firebase",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ulises Gascón",
+  "license": "GPLv3",
+  "dependencies": {
+    "firebase": "^2.4.1",
+    "serialport": "2.0.6"
+  }
+}
