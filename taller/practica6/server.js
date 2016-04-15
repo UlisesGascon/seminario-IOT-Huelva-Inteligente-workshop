@@ -24,8 +24,13 @@ if (puerto) {
             console.log('Iniciando la recepción de datos:');
             serialPort.on('data', function(datos) {
                 //console.log(datos);
-                var datosSerie = JSON.parse(datos);
-
+                var datosSerie = false;
+                try {
+                	datosSerie = JSON.parse(datos);
+                } catch(e){
+               		console.log("Try again!");
+                }
+		if(datosSerie){
 
                 myFirebaseRef.authWithCustomToken(config.token, function(error, authData) {
                     if (error) {
@@ -38,6 +43,7 @@ if (puerto) {
                         });
                     }
                 });
+		}
             });
         }
     });
