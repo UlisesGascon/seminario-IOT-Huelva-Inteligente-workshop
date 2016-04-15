@@ -1,6 +1,8 @@
 # Seminario-IoT-Huelva-Inteligente
 Seminario sobre Internet de Cosas (IoT) - Huelva Inteligente. 14 de Abril 2016 en Espacio de Innovación Digital
 
+![Cartel](http://blog.huelvainteligente.es/wp-content/uploads/2016/03/Cartel.jpg)
+
 ### Presentaciones:
 
 - [Seminario IoT - Parte 1](http://slides.com/ulisesgascon/iot-huelva-inteligente-parte-1#/)
