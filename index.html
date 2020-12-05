@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>IOT Huelva Inteligente (Taller)</title>
+
+		<meta name="description" content="¿Qué aprenderá? En este seminario, de 10:00 a 14:00, veremos, partiendo de una base sencilla en la que no es necesario tener conocimiento previo; qué es el IoT, el alcance, así como su potencialidad y proyección. Una charla &quot;in crescendo&quot; de la mano de Ulises Gascón, que culminará en horario de tarde, de 16:00 a 18:00, con el Taller IoT, en el que se proporcionará un Kit de Arduino para cada grupo y se realizarán prácticas introductorias cuyo objetivo será el acercamiento al IoT de primera mano. http://bit.ly/iot-huelva  ">
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="1fcf04d59adfbaa0072a6a54eabef469" data-background-color="rgb(129,122,124)" data-background-image="iot-huelva-inteligente-parte-taller/68e1f0f839c3549f854eb8895105e248.jpg"><div class="sl-block" data-block-type="text" style="width: 461px; left: 0px; top: 603px; height: auto;" data-block-id="e705a8158cfd53346a0a1cd1e742f3e1"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10; background-color: rgb(255, 255, 255);">
+<h1>Taller de IoT</h1>
+</div></div>
+</section><section data-id="4f5068bde58d6b9c73afb84eb1c28c59"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="fe7c7b84de36637ebc17ac3e70dea7fd"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+<h2>Agenda taller</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 264px; height: auto;" data-block-id="2c1feab384e909acad68f56789a61930"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+<ul>
+	<li>Prevención de riesgos</li>
+	<li>Factor electrónica</li>
+	<li>Factor Arduino</li>
+	<li>Factor programación </li>
+	<li>Herramientas</li>
+	<li><strong>¡Cacharreo!</strong></li>
+	<li>Proyectos Avanzados</li>
+</ul>
+</div></div></section><section data-id="eaf908e22c2bb6f00dced7ccee2fbeee" data-background-image="iot-huelva-inteligente-parte-taller/295ddc23703728b7decb12e553a68644.JPG" data-background-color="rgb(133,126,123)"><div class="sl-block" data-block-type="text" style="width: 661px; left: 160px; top: 479px; height: auto;" data-block-id="84f6ed42f5e6537880b98fa698eda13c"><div class="sl-block-content" data-placeholder-tag="h1" style="font-size: 200%; text-align: left; color: rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0);" data-placeholder-text="Text">
+<h3>Prevención</h3>
+
+<h3>de Riesgos</h3>
+</div></div></section><section data-id="24e16ca39c301927d0ae9ca0837034b2" data-background-image="iot-huelva-inteligente-parte-taller/1550f23106430454991e68333d08b2bf.jpg" data-background-color="rgb(126,120,105)"><div class="sl-block" data-block-type="text" style="width: 529px; left: 0px; top: 552px; height: auto;" data-block-id="497d89da7e751f86ff329dc6429a4f5e"><div class="sl-block-content" data-placeholder-tag="h1" style="font-size: 200%; text-align: left; z-index: 10; opacity: 0.77; background-color: rgb(255, 255, 255);" data-placeholder-text="Text" dir="ui">
+<h2>Divertida</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="e57e13c03ba0769c78d8dd39b93ba826" style="height: auto; min-width: 30px; min-height: 30px; width: 253px; left: 707px; top: 664px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(255, 255, 255); opacity: 0.6; background-color: rgb(255, 255, 255);">
+<pre style="color:rgb(55, 55, 55); text-align:start"><span style="font-size:0.5em">Photo by <a href="http://www.sheffieldhardwarehackers.org.uk/wordpress/" target="_blank">Sheffield Hackspace</a></span></pre>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 653px; left: 0px; top: 404px; height: auto;" data-block-id="154b13d95fc72da86c781a06d298a765"><div class="sl-block-content" data-placeholder-tag="h1" style="font-size: 200%; text-align: left; z-index: 13; color: rgb(255, 255, 255); opacity: 0.72; background-color: rgb(0, 0, 0);" data-placeholder-text="Text" dir="ui">
+<h2>Electrónica</h2>
+</div></div></section><section class="stack" data-id="0e220c90794c1bf0bc6393c94d067fdf"><section data-id="6e710949ddc6c4da8aade87ff9dddfbd" data-background-color="rgb(138,115,92)" data-background-image="iot-huelva-inteligente-parte-taller/50b82bbb53284e1db7146ac5be9d80d0.jpg"><div class="sl-block" data-block-type="text" style="width: 480px; left: 0px; top: 382px; height: auto;" data-block-id="ac4d0bb18b2439c8fb8992492c7cd971"><div class="sl-block-content" data-placeholder-tag="h1" style="font-size: 200%; text-align: left; color: rgb(255, 255, 255);" data-placeholder-text="Text" dir="ui">
+<h2>Factor </h2>
+<h2>Arduino</h2>
+</div></div></section><section data-id="11a55e4638db04fa61fc0e3dd02e451b"><div class="sl-block" data-block-type="image" data-block-id="254c49c85670a30a68b47fbe447c1e81" style="min-width: 30px; min-height: 30px; width: 960px; height: 679.245px; left: 0px; top: 11px;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1272" data-natural-height="900" data-src="iot-huelva-inteligente-parte-taller/96b9dc58aad90312d6673a0305deb548.png"></div></div></section><section data-id="c98e578912d4c57af9c3a7eaf0704fb1"><div class="sl-block" data-block-type="image" style="width: 960px; height: 679.78px; left: 0px; top: -0.5px;" data-block-id="07797a7ffb6d93af6f4273cbb2ce9944"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="1271" data-natural-height="900" data-src="iot-huelva-inteligente-parte-taller/0d94f90a091f9dacf53937321a76a1a0.jpg"></div></div></section></section><section class="stack" data-id="2562cccc67f675cd81494fba895eb622"><section data-id="df82057988b525ae268ec2ebc495dc01" data-background-image="iot-huelva-inteligente-parte-taller/5ac6fbdf3baaf326c2e95d99600ca7d4.jpg" data-background-color="rgb(87,105,125)"><div class="sl-block" data-block-type="text" style="width: 560px; left: 0px; top: 490px; height: auto;" data-block-id="3f99e79bfaa969a4365af4f05c880c57"><div class="sl-block-content" data-placeholder-tag="h1" style="font-size: 200%; text-align: left; z-index: 10; background-color: rgb(255, 255, 255);" data-placeholder-text="Text" dir="ui">
+<h3><span style="font-size:1.0em">Programación</span></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 446px; left: 57px; top: 599px; height: auto;" data-block-id="feb41e56cfcb26ed08b986ecae06c699"><div class="sl-block-content" data-placeholder-tag="h1" style="font-size: 200%; text-align: left; z-index: 12; background-color: rgb(255, 255, 255);" data-placeholder-text="Text" dir="ui">
+<h3 style="text-align: center;"><span style="font-size:1.0em">Para Todos</span></h3>
+</div></div></section><section data-id="2aecca9cb25d264bae53c21064419060"><div class="sl-block" data-block-type="image" data-block-id="7f0d393557704eb82273223f76ddbe93" style="min-width: 30px; min-height: 30px; width: 360px; height: 236.923px; left: 548px; top: 280px;"><a class="sl-block-content" style="z-index: 11;" href="http://s4a.cat/index_es.html" target="_blank"><img data-natural-width="234" data-natural-height="154" style="" data-src="iot-huelva-inteligente-parte-taller/35a3b737aa6ac7c69da0d9610cf02825.png"></a></div>
+<div class="sl-block" data-block-type="image" data-block-id="29c12f8098216bf2c8b28804757d7757" style="min-width: 30px; min-height: 30px; width: 316.105px; height: 66px; left: 570px; top: 530px;"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="546" data-natural-height="114" style="" data-src="iot-huelva-inteligente-parte-taller/53f82b2cb1139b92d9e51ad395239c84.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="af8bcb8ad2344e2087c3e05d7d2550e8" style="min-width: 30px; min-height: 30px; width: 360px; height: 270px; left: 120px; top: 307px;"><a class="sl-block-content" style="z-index: 13;" href="https://scratch.mit.edu/" target="_blank"><img style="" data-natural-width="640" data-natural-height="480" data-src="iot-huelva-inteligente-parte-taller/0e9c8ce3fc3a8e46f3bd0d55b3243bf7.jpg"></a></div>
+<div class="sl-block" data-block-type="image" data-block-id="877b14e467db280a169b33dbdcbba71a" style="min-width: 30px; min-height: 30px; width: 210.51px; height: 44px; left: 698px; top: 160px;"><a class="sl-block-content" style="z-index: 14;" href="https://blockly-games.appspot.com/" target="_blank"><img data-natural-width="244" data-natural-height="51" style="" data-src="iot-huelva-inteligente-parte-taller/66c225639ae4385bfc2a885ad0076b0c.png"></a></div>
+<div class="sl-block" data-block-type="image" data-block-id="b4df4a5ff7b3289d3dfe3d839c856768" style="min-width: 30px; min-height: 30px; width: 310.631px; height: 61px; left: 597px; top: 89px;"><a class="sl-block-content" style="z-index: 15;" href="https://blockly-demo.appspot.com/static/demos/code/index.html" target="_blank"><img style="" data-natural-width="331" data-natural-height="65" data-src="iot-huelva-inteligente-parte-taller/7fe877dd3664788fe5b270167e08c024.png"></a></div>
+<div class="sl-block" data-block-type="image" data-block-id="efa04d5437a0e15fbacd99f060b1ed23" style="min-width: 30px; min-height: 30px; width: 80px; height: 35.2688px; left: 135px; top: 228px;"><a class="sl-block-content" style="z-index: 16;" href="http://diwo.bq.com/" target="_blank"><img data-natural-width="93" data-natural-height="41" style="" data-src="iot-huelva-inteligente-parte-taller/3777c0e6446c2bc90c992a954d4dc85a.jpg"></a></div>
+<div class="sl-block" data-block-type="image" data-block-id="accf193b289f5371cc65ea878b5a17a4" style="min-width: 30px; min-height: 30px; width: 210.37px; height: 139px; left: 135px; top: 89px;"><a class="sl-block-content" style="z-index: 17;" href="http://bitbloq.bq.com/#/http://bitbloq.bq.com/#/" target="_blank"><img data-natural-width="675" data-natural-height="446" style="" data-src="iot-huelva-inteligente-parte-taller/c06e10996ac3d9bbd3fbd99ca9f0fd04.jpg"></a></div></section><section data-id="c66b059c1b217f34bf478a24a6b69bdd" data-background-color="#94ce90"><div class="sl-block" data-block-type="image" data-block-id="ea2e0f6ecb93054d597ae9c2cef009e2" style="min-width: 30px; min-height: 30px; width: 782.99px; height: 700px; left: 89px; top: 0px;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="868" data-natural-height="776" data-src="iot-huelva-inteligente-parte-taller/7f00b7f0ea89cc5476f005350f62f2fa.png"></div></div></section><section data-id="740d6db85b846bc09b77a03b71e29e5c"><div class="sl-block" data-block-type="image" data-block-id="c91b5c51b2053dd1281f86d8b18247f5" style="min-width: 30px; min-height: 30px; width: 960px; height: 678.712px; left: 0px; top: 11px;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1273" data-natural-height="900" data-src="iot-huelva-inteligente-parte-taller/4d70666611d29f31811bf2705e7f6083.png"></div></div></section></section><section class="stack" data-id="7f340c87dda4f5088c9ea0aea8e0bb2f"><section data-id="5654f2d2a9e3dc09df2f688e42efc3c9" data-background-image="iot-huelva-inteligente-parte-taller/dadeaeea3871d7fef5860b1fac61d3b5.jpeg" data-background-color="rgb(183,155,132)"><div class="sl-block" data-block-type="text" style="width: 560px; left: 0px; top: 579px; height: auto;" data-block-id="f88472bc5952dc50f1adf1a44c8314e8"><div class="sl-block-content" data-placeholder-tag="h1" style="font-size: 200%; text-align: left; z-index: 10; padding: 10px; background-color: rgb(255, 255, 255);" data-placeholder-text="Text" dir="ui">
+<h3><span style="font-size:1em">Herramientas</span></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="4de410b740b29c8edeadd238674793d3" style="height: auto; min-width: 30px; min-height: 30px; width: 220px; left: 740px; top: 664px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; opacity: 0.75; background-color: rgb(255, 255, 255);">
+<pre><span style="font-size:0.5em">Foto de Hatch Hackerspace</span></pre>
+</div></div></section><section data-id="e0d6b425320f632cb96e10cd12e22162"><div class="sl-block" data-block-type="image" data-block-id="7b7f2c634bd4816f164d8cb4befd94dc" style="min-width: 30px; min-height: 30px; width: 360px; height: 144px; left: 494px; top: 70px;"><a class="sl-block-content" style="z-index: 11;" href="http://fritzing.org/home/" target="_blank"><img style="" data-natural-width="1600" data-natural-height="640" data-src="iot-huelva-inteligente-parte-taller/2f0534de30e59989d4dcb06db7d05ea7.png"></a></div>
+<div class="sl-block" data-block-type="image" data-block-id="2d54413f66e23c1b33169fdd10a26310" style="min-width: 30px; min-height: 30px; width: 240px; height: 240px; left: 120px; top: 57px;"><a class="sl-block-content" style="z-index: 12;" href="https://www.sublimetext.com/" target="_blank"><img data-natural-width="256" data-natural-height="256" style="" data-src="iot-huelva-inteligente-parte-taller/29a7c79915d1a50a38d2abe702192ad2.png"></a></div>
+<div class="sl-block" data-block-type="image" data-block-id="a702828d08085bc483145b73a00d56e3" style="min-width: 30px; min-height: 30px; width: 263.459px; height: 219px; left: 106px; top: 311px;"><a class="sl-block-content" style="z-index: 13;" href="https://github.com/" target="_blank"><img data-natural-width="800" data-natural-height="665" style="" data-src="iot-huelva-inteligente-parte-taller/a2ce951ce7bfa2cc1cf6e44e2311569c.png"></a></div>
+<div class="sl-block" data-block-type="image" data-block-id="77a58a365849dd14faf0a3740627bb97" style="min-width: 30px; min-height: 30px; width: 280px; height: 140px; left: 574px; top: 191px;"><a class="sl-block-content" style="z-index: 14;" href="https://nodejs.org/en/" target="_blank"><img data-natural-width="600" data-natural-height="300" style="" data-src="iot-huelva-inteligente-parte-taller/cd092b6c348f0e52f3fa2bacb20c0b73.png"></a></div>
+<div class="sl-block" data-block-type="image" data-block-id="1dd589d1f768f0a2979aff4bf8a85670" style="min-width: 30px; min-height: 30px; width: 400px; height: 79px; left: 106px; top: 552px;"><a class="sl-block-content" style="z-index: 15;" href="https://www.firebase.com/" target="_blank"><img style="" data-natural-width="1600" data-natural-height="316" data-src="iot-huelva-inteligente-parte-taller/1aeeb4ad70a5d5d4d0b6eb8f77667fac.png"></a></div>
+<div class="sl-block" data-block-type="image" data-block-id="f6188b9283248e3fc6c97f602e29cf0f" style="min-width: 30px; min-height: 30px; width: 207.572px; height: 300px; left: 647px; top: 331px;"><a class="sl-block-content" style="z-index: 16;" href="http://johnny-five.io/" target="_blank"><img style="" data-natural-width="265" data-natural-height="383" data-src="iot-huelva-inteligente-parte-taller/1b1bf9b1ad67d3df5648d3ea060364c4.png"></a></div>
+<div class="sl-block" data-block-type="image" data-block-id="32489cf137fa61b3759f5018569aa3c8" style="min-width: 30px; min-height: 30px; width: 240px; height: 268.5px; left: 369px; top: 261px;"><a class="sl-block-content" style="z-index: 17;" href="https://www.arduino.cc/en/Main/Software" target="_blank"><img data-natural-width="160" data-natural-height="179" style="" data-src="iot-huelva-inteligente-parte-taller/b16f9c7bb9fc6cdcf813e565f4589dc5.svg"></a></div></section></section><section class="stack" data-id="1ff687e2c1867cdabad6e25bb01cc4ee"><section data-id="f3c7ea67867efaa490ce9c7f70f547cb" data-background-image="iot-huelva-inteligente-parte-taller/0ac370d6a94dab56d595d23f3aea42dc.jpg" data-background-color="rgb(106,101,71)"><div class="sl-block" data-block-type="text" style="width: 900px; left: 60px; top: 506px; height: auto;" data-block-id="5dc58ddb5c89f41791daad2a6586131c"><div class="sl-block-content" data-placeholder-tag="h1" style="font-size: 200%; text-align: left; z-index: 10; color: rgb(255, 255, 255); opacity: 0.9; background-color: rgb(91, 15, 0);" data-placeholder-text="Text" dir="ui">
+<h1>¡Cacharreo!</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="83d4159476d4395e0a74f8653fef5b57" style="height: auto; min-width: 30px; min-height: 30px; width: 222px; left: 738px; top: 0px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; opacity: 0.85; color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);">
+<pre><span style="font-size:0.5em">Photo by FIXME Hackerspace</span></pre>
+</div></div></section><section data-id="89c3f84f94a37596a1f463a717c17cad"><div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 87px; height: auto;" data-block-id="5c4d5d49f0cb10088d3351ff965b335e"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left;">
+<h2>Nuestro Kit</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 430px; left: 23px; top: 161px; height: auto;" data-block-id="2dc8f449f09c91e8887a9ff8b39fa929"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 13; text-align: left;">
+<ul>
+	<li>Arduino UNO</li>
+	<li>LCD (2x20)</li>
+	<li>Cable USB</li>
+	<li>Cables varios</li>
+	<li>Botones</li>
+	<li>Motor</li>
+	<li>Relé</li>
+	<li>Potenciómetro</li>
+	<li>Matriz Led 8x8</li>
+	<li>Leds colores</li>
+	<li>Led RGB</li>
+	<li>Resistencias</li>
+	<li>etc...</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 453.032px; height: 641px; left: 479.5px; top: 29px;" data-block-id="d3cf8f367805036b0f0e125de959d43d"><div class="sl-block-content"><img style="" data-natural-width="617" data-natural-height="873" data-src="iot-huelva-inteligente-parte-taller/1d9494ac6a99393bed8d540dfbef9f33.png"></div></div></section><section data-id="beb0e48e08aba5010dcd218783a0ba22"><div class="sl-block" data-block-type="text" style="width: 362px; left: 299px; top: 33px; height: auto;" data-block-id="f5be0b90a5da06a42370d8ddc4a13f98"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>Simon Monk</h2>
+</div></div>
+
+<div class="sl-block" data-block-type="image" data-block-id="61c4abaf10da90db83bfe600653a21c8" style="min-width: 30px; min-height: 30px; width: 180.046px; height: 157px; left: 80px; top: 123px;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="250" data-natural-height="218" data-src="iot-huelva-inteligente-parte-taller/b9e9223eb5c8703aa4e8b99fcfa6b203.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="51e226e258308eacd2fdbbb5abc12b96" style="min-width: 30px; min-height: 30px; width: 199.846px; height: 300px; left: 380px; top: 330px;"><div class="sl-block-content" style="z-index: 13;"><img data-natural-width="433" data-natural-height="650" style="" data-src="iot-huelva-inteligente-parte-taller/4e1b08516ede8621f65d93c595ecb0e4.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="f967d46ee45ea78935c48dea70b2c927" style="min-width: 30px; min-height: 30px; width: 233.533px; height: 300px; left: 646px; top: 330px;"><div class="sl-block-content" style="z-index: 14;"><img data-natural-width="260" data-natural-height="334" style="" data-src="iot-huelva-inteligente-parte-taller/612f4c8c88f21d4c67447a8e6233bb4c.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="6ec7bac9f0b93e8fafcbf7f5215923f1" style="min-width: 30px; min-height: 30px; width: 234.241px; height: 300px; left: 80px; top: 330px;"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="602" data-natural-height="771" data-src="iot-huelva-inteligente-parte-taller/e3b17c1ff1203ec971cce4bb9f98cdc9.jpg"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="b18be47ebc4b601a6e5c52d76074ceeb" style="height: auto; min-width: 30px; min-height: 30px; width: 620px; left: 260px; top: 126px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
+<blockquote>
+<p><span style="color:rgb(41, 47, 51); text-align:left">Author of 'Programming Arduino', 'Programming Raspberry Pi', 'Programming BeagleBone Black' and various books on Arduino, Raspberry Pi and Electronics. - <a href="https://twitter.com/simonmonk2" target="_blank">Twitter</a></span></p>
+</blockquote>
+</div></div></section><section data-id="548c49938db96e6bb6b69d157e785df9"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 190px; height: auto;" data-block-id="c4a193de195e39ecd8448050278573f1"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+<h2>Prácticas</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 301px; left: 330px; top: 264px; height: auto;" data-block-id="256db86a19edc2d7379c98e259a261b5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+<ul>
+	<li>Parpadeo LED</li>
+	<li>Usando LED RGB</li>
+	<li>Combinando LED e interruptores</li>
+	<li>RGB e interruptores</li>
+	<li>¡Vamos a la web!</li>
+</ul>
+</div></div></section><section data-id="9a68a5ead6102857faa404bc1f166a08"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="593998511439cfa0d84bad6fd2c6b919"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Práctica 1 - Parpadeo Led</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="8789781cdb56a96ce6ca7f6f15ecf167" style="min-width: 30px; min-height: 30px; width: 800px; height: 479.68px; left: 80px; top: 118px;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="1501" data-natural-height="900" data-src="iot-huelva-inteligente-parte-taller/65a7738568d5666d8ad42b06732dbf4c.jpg"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="3bd1d70b7a41d91b7065735da7b52a8e" style="height: auto; min-width: 30px; min-height: 30px; width: 392px; left: 364px; top: 611px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p><a href="https://learn.adafruit.com/adafruit-arduino-lesson-1-blink/" target="_blank"><span style="font-size:1.0em"><span style="color:rgb(51, 51, 51); text-align:start">The 'L' LED de Simon Monk</span></span></a></p>
+</div></div></section><section data-id="e53029bca65cb2dddbd04450c1d0a120"><div class="sl-block" data-block-type="text" style="width: 217px; left: 372px; top: 33px; height: auto;" data-block-id="024971a2f7e7cbda054746839e4f694c"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>Código</h2>
+</div></div>
+
+<div class="sl-block" data-block-type="code" data-block-id="f6ad997f01289e2934fcca0e1c9d6c39" style="min-width: 30px; min-height: 30px; width: 712px; height: 497px; left: 124px; top: 109px;"><div class="sl-block-content" style="z-index: 12;"><pre><code>/*
+  Proyecto: Blink
+  Autor: Adafruit
+  Referencia: https://learn.adafruit.com/adafruit-arduino-lesson-1-blink/.
+  Adaptado por Ulises Gascón
+ */
+ 
+// Usamos el LED que esta conectado por defecto al PIN 13.
+// Le ponemos Nombre:
+int miLed = 13;
+
+// Setup se ejecuta una vez:
+void setup() {                
+  // Poner el PIN en modo SALIDA.
+  pinMode(miLed, OUTPUT);     
+}
+
+// Loop se ejecutará por siempre:
+void loop() {
+  digitalWrite(miLed, HIGH);   // Encendemos el LED (Subimos (HIGH) el voltaje)
+  delay(1000);               // Esperamos un segundo (1000 milisegundos)
+  digitalWrite(miLed, LOW);    // Apagamos el LED (Bajamos (LOW) el voltaje)
+  delay(1000);               // Esperamos un segundo (1000 milisegundos)
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="b0a7b2332a101d4ec3b53e83c91cc99e" style="height: auto; min-width: 30px; min-height: 30px; width: 366px; left: 312px; top: 612px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<pre>Disponible en <a href="https://github.com/UlisesGascon/Seminario-IoT-Huelva-Inteligente/blob/master/taller/practica1/codigo.ino" target="_blank">GitHub</a></pre>
+</div></div></section><section data-id="ef20a2cde4fb9da632366e40d4d9850e"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="48da9325b41b3dc419b3293c5ebdaa69"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Práctica 2 - Parpadeo Led</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 517.857px; height: 461px; left: 257px; top: 120px;" data-block-id="e5f448308537c40e98f11522daacda85"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="1011" data-natural-height="900" data-src="iot-huelva-inteligente-parte-taller/246998957bcdb16e8ccdf417e64e4a6e.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 392px; left: 364px; top: 611px;" data-block-id="f0709b07f196e399c70776ca1bdae316"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p><a href="https://learn.adafruit.com/adafruit-arduino-lesson-2-leds" target="_blank"><span style="font-size:1.0em"><span style="color:rgb(51, 51, 51); text-align:start">LEDs de Simon Monk</span></span></a></p>
+</div></div></section><section data-id="9a30f1028f58a809d14c7529e002a85b"><div class="sl-block" data-block-type="text" style="width: 329px; left: 316px; top: 33px; height: auto;" data-block-id="c8ea3329b7103bf3198d55478a80b418"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>Importante</h2>
+</div></div>
+
+<div class="sl-block" data-block-type="image" data-block-id="d4490f022e7c14533ffa0d3ce47c665a" style="min-width: 30px; min-height: 30px; width: 291.438px; height: 490px; left: 589px; top: 140px;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="455" data-natural-height="765" data-src="iot-huelva-inteligente-parte-taller/ba6b17d041eda5da03a7576e8d490a06.gif"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="73835af1fe41945c378975f63e89e7af" style="min-width: 30px; min-height: 30px; width: 462.276px; height: 414px; left: 49px; top: 152px;"><div class="sl-block-content" style="z-index: 13;"><img data-natural-width="316" data-natural-height="283" style="" data-src="iot-huelva-inteligente-parte-taller/7b1467229a2ba4a8aa3f2df69a2ef95a.gif"></div></div></section><section data-id="2f9e31e715a5b3f672749ad1b501654c"><div class="sl-block" data-block-type="text" style="width: 348px; left: 306px; top: 33px; height: auto;" data-block-id="4a6e82203d62836bb08e892660a23317"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>Conexiones</h2>
+</div></div>
+
+
+<div class="sl-block" data-block-type="image" data-block-id="1b58bb01115e05921d3ccf26d7ce9e01" style="min-width: 30px; min-height: 30px; width: 447.258px; height: 560px; left: 257px; top: 118px;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="603" data-natural-height="755" data-src="iot-huelva-inteligente-parte-taller/e4530e81f4e836e3bf1d98f8c36cc3cf.jpg"></div></div></section><section data-id="91169b94337e1cef341bff64a18c5d25"><div class="sl-block" data-block-type="text" style="width: 217px; left: 372px; top: 33px; height: auto;" data-block-id="4621489e19b0aa7f0c2a3d57dea5dc0a"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>Código</h2>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 712px; height: 497px; left: 124px; top: 109px;" data-block-id="2c2045ac870ae5307071ffc8feee46f8"><div class="sl-block-content" style="z-index: 12;"><pre><code>/*
+  Proyecto: Blink
+  Autor: Adafruit
+  Referencia: https://learn.adafruit.com/adafruit-arduino-lesson-1-blink/.
+  Adaptado por Ulises Gascón
+ */
+ 
+// Usamos el LED que esta conectado por defecto al PIN 13.
+// Le ponemos Nombre:
+int miLed = 13;
+
+// Setup se ejecuta una vez:
+void setup() {                
+  // Poner el PIN en modo SALIDA.
+  pinMode(miLed, OUTPUT);     
+}
+
+// Loop se ejecutará por siempre:
+void loop() {
+  digitalWrite(miLed, HIGH);   // Encendemos el LED (Subimos (HIGH) el voltaje)
+  delay(1000);               // Esperamos un segundo (1000 milisegundos)
+  digitalWrite(miLed, LOW);    // Apagamos el LED (Bajamos (LOW) el voltaje)
+  delay(1000);               // Esperamos un segundo (1000 milisegundos)
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 362px; left: 299px; top: 612px;" data-block-id="49275391e476d478d83c5e05931c2d7b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<pre style="text-align: center;">Disponible en <a href="https://github.com/UlisesGascon/Seminario-IoT-Huelva-Inteligente/blob/master/taller/practica2/codigo.ino" target="_blank">GitHub</a></pre>
+</div></div></section><section data-id="1551d995e3eb0601c1ced575d96d6fb4"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="bedebf190b7ce2c94f3f7f5fde34cefc"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Práctica 3 - LED RGB</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 691.039px; height: 482px; left: 135px; top: 107px;" data-block-id="e27af72991a7c55da34a628174b53c83"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="800" data-natural-height="558" data-src="iot-huelva-inteligente-parte-taller/d82a36670837d229a8e33454c6a74c38.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 460px; left: 250px; top: 611px;" data-block-id="011fb922c0b474d334a6b1092beaa956"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p><a href="https://learn.adafruit.com/adafruit-arduino-lesson-3-rgb-leds" target="_blank"><span style="font-size:1.0em"><span style="color:rgb(51, 51, 51); text-align:start">LED RGB de Simon Monk</span></span></a></p>
+</div></div></section><section data-id="9219d0247a49b32fd9870c50bc44e5f8"><div class="sl-block" data-block-type="text" style="width: 329px; left: 316px; top: 33px; height: auto;" data-block-id="b49cbe0061b28fd44a117d23bee69206"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>Importante</h2>
+</div></div>
+
+
+<div class="sl-block" data-block-type="image" data-block-id="4660fa952832c7f818a2bee18f4bcf72" style="min-width: 30px; min-height: 30px; width: 639.535px; height: 550px; left: 306px; top: 113px;"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="1000" data-natural-height="860" style="" data-src="iot-huelva-inteligente-parte-taller/9f6dbabb3c724b54be7c45e0cf79832d.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="8a92894e6b0669b5ca6da540c63fba97" style="min-width: 30px; min-height: 30px; width: 360px; height: 360px; left: 40px; top: 181px;"><div class="sl-block-content" style="z-index: 13;"><img data-natural-width="400" data-natural-height="400" style="" data-src="iot-huelva-inteligente-parte-taller/56e603ae4f4583a6aa658edea3b6279a.png"></div></div></section><section data-id="ff8892494e5b9272d102d355adb7f8bd"><div class="sl-block" data-block-type="text" style="width: 348px; left: 306px; top: 33px; height: auto;" data-block-id="d074ab02851c67bf8ba0b23c9eb343c8"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>Conexiones</h2>
+</div></div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 800px; height: 478.237px; left: 80px; top: 140px;" data-block-id="981b00964126a9e55dc0a4bd89f3deba"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="726" data-natural-height="434" data-src="iot-huelva-inteligente-parte-taller/be781ec4b2939fc635aff09167619217.png"></div></div></section><section data-id="465695f9ffb599d51a9c727a3585090c"><div class="sl-block" data-block-type="text" style="width: 217px; left: 372px; top: 33px; height: auto;" data-block-id="1e73f83e174daf6f3238c4a1a535d210"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>Código</h2>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 712px; height: 497px; left: 124px; top: 109px;" data-block-id="038372a5698c755789757aef40abfec0"><div class="sl-block-content" style="z-index: 12;"><pre><code>/*
+  Proyecto: RGB LED
+  Autor: Adafruit
+  Referencia: https://learn.adafruit.com/adafruit-arduino-lesson-3-rgb-leds
+  Adaptado por Ulises Gascón
+*/
+ 
+int pinRojo = 11;
+int pinVerde = 10;
+int pinAzul = 9;
+
+void setup()
+{
+  pinMode(pinRojo, OUTPUT);
+  pinMode(pinVerde, OUTPUT);
+  pinMode(pinAzul, OUTPUT);  
+}
+ 
+void loop()
+{
+  setColor(255, 0, 0);  // Rojo
+  delay(1000);
+  setColor(0, 255, 0);  // Verde
+  delay(1000);
+  setColor(0, 0, 255);  // Azul
+  delay(1000);
+  setColor(255, 255, 0);  // Amarillo
+  delay(1000);  
+  setColor(80, 0, 80);  // Púrpura
+  delay(1000);
+  setColor(0, 255, 255);  // Azul agua
+  delay(1000);
+}
+ 
+void setColor(int rojo, int verde, int azul)
+{
+  analogWrite(pinRojo, rojo);
+  analogWrite(pinVerde, verde);
+  analogWrite(pinAzul, azul);  
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 366px; left: 297px; top: 612px;" data-block-id="2315f04994bc427c1f1b694d574d0428"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<pre style="text-align: center;">Disponible en <a href="https://github.com/UlisesGascon/Seminario-IoT-Huelva-Inteligente/blob/master/taller/practica3/codigo.ino" target="_blank">GitHub</a></pre>
+</div></div></section><section data-id="33632d2d568f1de51bea652f7ce84965"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="4e166f62db0a7fb744db531373294730"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Práctica 4 - Led y botones</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 531.579px; height: 505px; left: 215px; top: 107px;" data-block-id="c0aec8257807863aaf420ac94a2f09d1"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="800" data-natural-height="760" data-src="iot-huelva-inteligente-parte-taller/4c5edb0892520d51b457405a2999faea.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 498px; left: 231px; top: 611px;" data-block-id="c3317a4108c2b3e23ba32d65b5b137c6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p><span style="font-size:1.0em"><span style="color:rgb(51, 51, 51); text-align:start"><a href="https://learn.adafruit.com/adafruit-arduino-lesson-6-digital-inputs" target="_blank">Digital Inputs de</a> <a href="https://learn.adafruit.com/adafruit-arduino-lesson-6-digital-inputs" target="_blank">Simon Monk</a></span></span></p>
+</div></div></section><section data-id="3295407aa0c73ca0cedb56338e9c7f25"><div class="sl-block" data-block-type="text" style="width: 329px; left: 316px; top: 33px; height: auto;" data-block-id="54756474bf6298c4280a809c5524bb7c"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>Importante</h2>
+</div></div>
+
+
+<div class="sl-block" data-block-type="image" data-block-id="df1fc399d32663828fdab4f5ce88b924" style="min-width: 30px; min-height: 30px; width: 798.1px; height: 210px; left: 81px; top: 140px;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="1600" data-natural-height="421" data-src="iot-huelva-inteligente-parte-taller/5719a86c3a72170afd5ecebf6a663143.png"></div></div></section><section data-id="c64d7b1a3935face5e57f8da5e5f82a6"><div class="sl-block" data-block-type="text" style="width: 348px; left: 306px; top: 33px; height: auto;" data-block-id="d45a612bdd04a333ffbf5a3e60a98e46"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>Conexiones</h2>
+</div></div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 695px; height: 538.183px; left: 133px; top: 119px;" data-block-id="abf4208ba3fc07d07103a999e627cce0"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="1139" data-natural-height="882" data-src="iot-huelva-inteligente-parte-taller/bc5de025de8a353a3f08492383b2e75d.jpg"></div></div></section><section data-id="af685e70a827687040ba92ef352713ed"><div class="sl-block" data-block-type="text" style="width: 217px; left: 372px; top: 33px; height: auto;" data-block-id="c01539defa477f9a7df6f965db541efa"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>Código</h2>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 712px; height: 497px; left: 124px; top: 109px;" data-block-id="a1a526c1d2261a01c7dd23c7cd51db2c"><div class="sl-block-content" style="z-index: 12;"><pre><code>/*
+  Proyecto: Inputs
+  Autor: Adafruit
+  Referencia: https://learn.adafruit.com/adafruit-arduino-lesson-6-digital-inputs
+  Adaptado por Ulises Gascón
+*/
+int pinLed = 5;
+int pinBotonA = 9;
+int pinBotonB = 8;
+ 
+byte leds = 0;
+ 
+void setup() 
+{
+  pinMode(pinLed, OUTPUT);
+  pinMode(pinBotonA, INPUT_PULLUP);  
+  pinMode(pinBotonB, INPUT_PULLUP);  
+}
+ 
+void loop() 
+{
+  if (digitalRead(pinBotonA) == LOW)
+  {
+    digitalWrite(pinLed, HIGH);
+  }
+  if (digitalRead(pinBotonB) == LOW)
+  {
+    digitalWrite(pinLed, LOW);
+  }
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 409px; left: 276px; top: 612px;" data-block-id="a1345f4ae1fde0746558ecdb6f98f083"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<pre style="text-align: center;">Disponible en <a href="https://github.com/UlisesGascon/Seminario-IoT-Huelva-Inteligente/blob/master/taller/practica4/codigo.ino" target="_blank">GitHub</a></pre>
+</div></div></section><section data-id="7e7cf208fdd293f77f6fef58e11e8262"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="4ff5703a06d4298a91997f99bc4bcc0b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Práctica 5 - RGB y botones</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 696.139px; height: 475px; left: 132px; top: 126px;" data-block-id="6b2aad3b650069c94c2e6897dcb7e25a"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="1319" data-natural-height="900" data-src="iot-huelva-inteligente-parte-taller/f7883fd1f50c3621fe41f4f659d5b604.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 472px; left: 244px; top: 611px;" data-block-id="9416c52befcf07f2b99b9f416b61a66b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p><a href="http://learn.adafruit.com/adafruit-arduino-lesson-7-make-an-rgb-led-fader/overview" target="_blank">RGB LED Fader de</a><a href="http://learn.adafruit.com/adafruit-arduino-lesson-7-make-an-rgb-led-fader/overview" target="_blank"><span style="font-size:1.0em"><span style="color:rgb(51, 51, 51); text-align:start"> Simon Monk</span></span></a></p>
+</div></div></section><section data-id="82b44a0e02f076599f50d2b47bec0e54"><div class="sl-block" data-block-type="text" style="width: 348px; left: 306px; top: 33px; height: auto;" data-block-id="8688ec5221c74807cd530a7fac281f4e"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>Conexiones</h2>
+</div></div>
+
+
+<div class="sl-block" data-block-type="image" style="width: 786.153px; height: 543px; left: 87px; top: 107px;" data-block-id="62d6bf8dc968b2538a0a078b3e40c5d1"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="1248" data-natural-height="862" data-src="iot-huelva-inteligente-parte-taller/af7762163fad0e626aaf894ab0ee80d6.jpg"></div></div></section><section data-id="3eae2b05d9df6a5dc5b3c41080243f28"><div class="sl-block" data-block-type="text" style="width: 217px; left: 372px; top: 33px; height: auto;" data-block-id="26b1e1efc97a1a5deb18cea45dfb8700"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>Código</h2>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 712px; height: 497px; left: 124px; top: 109px;" data-block-id="2421b8fcfd4b8c0879f4c68103eafc9c"><div class="sl-block-content" style="z-index: 12;"><pre><code>/*
+  Proyecto: RGB Fader
+  Autor: Adafruit
+  Referencia: https://learn.adafruit.com/adafruit-arduino-lesson-7-make-an-rgb-led-fader
+  Adaptado por Ulises Gascón
+*/
+
+int pinLedRojo = 11;
+int pinLedVerde = 10;
+int pinLedAzul = 9;
+ 
+int pinInterruptorRojo = 7;
+int pinInterruptorVerde = 6;
+int pinInterruptorAzul = 5;
+ 
+int valorRojo = 0;
+int valorAzul = 0;
+int valorVerde = 0;
+ 
+void setup()
+{
+  pinMode(pinLedRojo, OUTPUT);
+  pinMode(pinLedVerde, OUTPUT);
+  pinMode(pinLedAzul, OUTPUT);  
+  pinMode(pinInterruptorRojo, INPUT_PULLUP);
+  pinMode(pinInterruptorVerde, INPUT_PULLUP);
+  pinMode(pinInterruptorAzul, INPUT_PULLUP);
+}
+ 
+void loop()
+{
+  if (digitalRead(pinInterruptorRojo) == LOW)
+  {
+    valorRojo ++;
+    if (valorRojo &gt; 255) valorRojo = 0;
+  }
+  if (digitalRead(pinInterruptorVerde) == LOW)
+  {
+    valorVerde ++;
+    if (valorVerde &gt; 255) valorVerde = 0;
+  }
+  if (digitalRead(pinInterruptorAzul) == LOW)
+  {
+    valorAzul ++;
+    if (valorAzul &gt; 255) valorAzul = 0;
+  }
+  analogWrite(pinLedRojo, valorRojo);
+  analogWrite(pinLedVerde, valorVerde);
+  analogWrite(pinLedAzul, valorAzul);  
+  delay(10);
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 376px; left: 293px; top: 612px;" data-block-id="b85431f792cc44cfb9d98c7bc5ec650c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<pre style="text-align: center;">Disponible en <a href="https://github.com/UlisesGascon/Seminario-IoT-Huelva-Inteligente/blob/master/taller/practica5/codigo.ino" target="_blank">GitHub</a></pre>
+</div></div></section><section data-id="fb57c880cf5cfece7357af6b2a110e62"><div class="sl-block" data-block-type="text" style="width: 872px; left: 44px; top: 12px; height: auto;" data-block-id="5a8bd5d1f4562d886978c0c3d2ee57de"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Práctica 6 - ¡Vamos a la web!</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="6d414d9183826bf6daa719b2cc241cdb" style="min-width: 30px; min-height: 30px; width: 800px; height: 596.52px; left: 80px; top: 103.48px;"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="1207" data-natural-height="900" style="" data-src="iot-huelva-inteligente-parte-taller/374692423b69b4f807db833de3fe07f2.png"></div></div></section><section data-id="3994e9317f28bc145da04a5bf60ed813"><div class="sl-block" data-block-type="text" style="width: 217px; left: 372px; top: 33px; height: auto;" data-block-id="c328d654f54b4f93ae87e20501dc6654"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>Código</h2>
+</div></div>
+
+<div class="sl-block" data-block-type="code" style="width: 712px; height: 497px; left: 125px; top: 107px;" data-block-id="1c769be27b2812f564a2ba56fdd19e3c"><div class="sl-block-content" style="z-index: 12;"><pre><code>/*
+  Proyecto: RGB Fader to Firebase
+  Autor Original: Adafruit
+  Referencia: https://learn.adafruit.com/adafruit-arduino-lesson-7-make-an-rgb-led-fader
+  Adaptado por Ulises Gascón
+*/
+
+int pinLedRojo = 11;
+int pinLedVerde = 10;
+int pinLedAzul = 9;
+ 
+int pinInterruptorRojo = 7;
+int pinInterruptorVerde = 6;
+int pinInterruptorAzul = 5;
+ 
+int valorRojo = 0;
+int valorAzul = 0;
+int valorVerde = 0;
+ 
+void setup()
+{
+  // Serial
+  Serial.begin(9600);
+  
+  pinMode(pinLedRojo, OUTPUT);
+  pinMode(pinLedVerde, OUTPUT);
+  pinMode(pinLedAzul, OUTPUT);  
+  pinMode(pinInterruptorRojo, INPUT_PULLUP);
+  pinMode(pinInterruptorVerde, INPUT_PULLUP);
+  pinMode(pinInterruptorAzul, INPUT_PULLUP);
+}
+ 
+void loop()
+{
+  if (digitalRead(pinInterruptorRojo) == LOW)
+  {
+    valorRojo ++;
+    if (valorRojo &gt; 255) valorRojo = 0;
+  }
+  if (digitalRead(pinInterruptorVerde) == LOW)
+  {
+    valorVerde ++;
+    if (valorVerde &gt; 255) valorVerde = 0;
+  }
+  if (digitalRead(pinInterruptorAzul) == LOW)
+  {
+    valorAzul ++;
+    if (valorAzul &gt; 255) valorAzul = 0;
+  }
+  analogWrite(pinLedRojo, valorRojo);
+  analogWrite(pinLedVerde, valorVerde);
+  analogWrite(pinLedAzul, valorAzul);  
+
+  // JSON
+  String jsonSerial = "{";
+  jsonSerial += "\"azul\":";
+  jsonSerial += valorAzul;
+  jsonSerial += ", \"rojo\":";
+  jsonSerial += valorRojo;  
+  jsonSerial += ", \"verde\":";
+  jsonSerial += valorVerde;
+  jsonSerial += "}";
+  // Impresión
+  Serial.println(jsonSerial);
+  
+  delay(100);
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 364px; left: 298px; top: 612px;" data-block-id="98f11bb3da88473c2e7f772bc0ddffbd"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<pre style="text-align:center">Disponible en <a href="https://github.com/UlisesGascon/Seminario-IoT-Huelva-Inteligente/blob/master/taller/practica6/practica6.ino" target="_blank">GitHub</a></pre>
+</div></div></section><section data-id="3824db6deb966a3449fad7e59e6ff780"><div class="sl-block" data-block-type="text" style="width: 297px; left: 332px; top: 33px; height: auto;" data-block-id="bf11e808bfca006e56819921dd1bea2f"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>Resultado</h2>
+</div></div>
+
+<div class="sl-block" data-block-type="image" data-block-id="b95076fc171c9623137a8dd19086cb1a" style="min-width: 30px; min-height: 30px; width: 772px; height: 579px; left: 95px; top: 107px;"><div class="sl-block-content" style="z-index: 14;"><img data-natural-width="1200" data-natural-height="900" style="" data-src="iot-huelva-inteligente-parte-taller/a4b5fea2f804f99105003464cd8a222c.jpg"></div></div></section><section data-id="85f9c0559eb93a641559c4652bb931ae"><div class="sl-block" data-block-type="text" style="width: 141px; left: 410px; top: 33px; height: auto;" data-block-id="9d98fe9975e9d18d7c904e28b5323951"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>WEB</h2>
+</div></div>
+
+
+<div class="sl-block" data-block-type="image" data-block-id="f189be6fd7d07cc25b572f50bd77fa55" style="min-width: 30px; min-height: 30px; width: 414.093px; height: 540px; left: 546px; top: 120px;"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="592" data-natural-height="772" style="" data-src="iot-huelva-inteligente-parte-taller/ee3730fd26784c164ed4837ffd6779c6.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="77b35c0035f9298105743bb99ee71fff" style="min-width: 30px; min-height: 30px; width: 529.8px; height: 540px; left: 0px; top: 120px;"><div class="sl-block-content" style="z-index: 13;"><img data-natural-width="883" data-natural-height="900" style="" data-src="iot-huelva-inteligente-parte-taller/549e9bf8c3b003c887ab8956475c21b9.png"></div></div></section></section><section class="stack" data-id="e3ebd7703199bbbb55e528ab95ebbeaa"><section data-id="d3d0003e8dfda22f37e0fdc66a9461a7" data-background-color="rgb(61,76,56)" data-background-image="iot-huelva-inteligente-parte-taller/dc813fa5ff0b59a561d1c8d58016e2de.jpg"><div class="sl-block" data-block-type="text" style="width: 400px; left: 0px; top: 0px; height: auto;" data-block-id="d5aa7880255cc6b8b81769561392c034"><div class="sl-block-content" data-placeholder-tag="h1" style="font-size: 200%; text-align: left; color: rgb(0, 0, 0); z-index: 10; background-color: rgb(255, 255, 255);" data-placeholder-text="Text" dir="ui">
+<h3>Proyectos</h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 436px; left: 0px; top: 109px; height: auto;" data-block-id="c7ce342cf702a51284055fa6e38a3e16"><div class="sl-block-content" data-placeholder-tag="h1" style="font-size: 200%; text-align: left; color: rgb(0, 0, 0); z-index: 12; background-color: rgb(255, 255, 255);" data-placeholder-text="Text" dir="ui">
+<h3>Avanzados</h3>
+</div></div></section><section data-id="1c9f7d61c780676843bd57802a3fd34a"><div class="sl-block" data-block-type="text" style="width: 800px; left: 81px; top: 33px; height: auto;" data-block-id="d1086958d5188f407b21aace8a9e59fd"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2><span style="font-size:0.7em"><span style="color:rgb(34, 34, 34); text-align:start"><a href="http://ulisesgascon.github.io/Agroduino" target="_blank">Agroduino</a> (2016, <a href="https://twitter.com/kom_256" target="_blank">Ulises Gascón</a>)</span></span></h2>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 605.333px; height: 454px; left: 10px; top: 136px;" data-block-id="5f08cba2f99dc9aa90fcd79f1d045852"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="1200" data-natural-height="900" style="" data-src="iot-huelva-inteligente-parte-taller/e754729a88f6b22804808f26ed674161.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 881px; left: 40px; top: 651px;" data-block-id="7d96d100857b3cb8d6424e4e624abcce"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<pre style="text-align:center"><span style="font-size:0.7em">Código y Diseños: <a href="https://github.com/UlisesGascon/Agroduino" target="_blank">Github</a> | Licencia: GNU GPL v3</span></pre>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="e51378ce60412d29c62dbbb5520312c7" style="min-width: 30px; min-height: 30px; width: 319.856px; height: 448px; left: 626px; top: 139px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="634" data-natural-height="888" data-src="iot-huelva-inteligente-parte-taller/6ef916e2aa63f411dad5930a54ff0ad3.png"></div></div></section><section data-id="72e9b13a55cc873397d3882bd209d7e2"><div class="sl-block" data-block-type="image" data-block-id="e20f099ccb22f97b2148c679e2e784d9" style="min-width: 30px; min-height: 30px; width: 933.333px; height: 700px; left: 13px; top: 0px;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1200" data-natural-height="900" data-src="iot-huelva-inteligente-parte-taller/cd4a60efba155a581d3f581b937c2e07.jpg"></div></div></section><section data-id="7becbe2b7d3e70e32c32be25b3e98256"><div class="sl-block" data-block-type="image" data-block-id="ab2b0bc503932def0f0535d0be6625fe" style="min-width: 30px; min-height: 30px; width: 960px; height: 667.961px; left: 0px; top: 16px;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1236" data-natural-height="860" data-src="iot-huelva-inteligente-parte-taller/b4912d819d458474b53eafa3649f40d9.png"></div></div></section><section data-id="3dbad13c4c25e7dd8968a71be2787da7"><div class="sl-block" data-block-type="image" data-block-id="6227ea5a96d01af1678d83e7aaba5fcc" style="min-width: 30px; min-height: 30px; width: 768.444px; height: 700px; left: 96px; top: 0px;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="988" data-natural-height="900" data-src="iot-huelva-inteligente-parte-taller/1181746055739468ab4752d06a914e42.png"></div></div></section><section data-id="cab38aef2f5aa2747a13b445cd004b0a"><div class="sl-block" data-block-type="text" style="width: 800px; left: 81px; top: 33px; height: auto;" data-block-id="61f02aee6d8104251f65c6ede0065f75"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2><span style="font-size:0.7em"><span style="color:rgb(34, 34, 34); text-align:start"><a href="https://calidaddelaire.firebaseapp.com/" target="_blank">Calidad del Aire</a> (2016, <a href="https://twitter.com/kom_256" target="_blank">Ulises Gascón</a>)</span></span></h2>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 881px; height: 495.74px; left: 40px; top: 139.5px;" data-block-id="5604756ab4a250361457a0bd1dd39c17"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="622" data-natural-height="350" style="" data-src="iot-huelva-inteligente-parte-taller/8163c8bc27df55eeb0d45f04645275aa.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 881px; left: 40px; top: 651px;" data-block-id="41e4fde9265793763577a02214495084"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<pre style="text-align:center"><span style="font-size:0.7em">Código y Diseños: <a href="https://github.com/UlisesGascon/Calidad-del-Aire" target="_blank">Github</a> | Introducción: <a href="http://www.fictizia.com/actualidad/arduino-day-2016-calidad-del-aire" target="_blank">Fictizia</a> | Licencia: GNU GPL v3</span></pre>
+</div></div></section><section data-id="b72bb389dc57ee0c751df1bf0d8f2fea"><div class="sl-block" data-block-type="image" data-block-id="54ef6ac652db02708c4a8fe2f0ce903f" style="min-width: 30px; min-height: 30px; width: 300px; height: 225px; left: 312px; top: 14px;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1200" data-natural-height="900" data-src="iot-huelva-inteligente-parte-taller/2969cb1e7f8b8b3b725ee4642276070a.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="4626473155526199ef199329e0a78152" style="min-width: 30px; min-height: 30px; width: 301.333px; height: 226px; left: 0px; top: 13px;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="1200" data-natural-height="900" data-src="iot-huelva-inteligente-parte-taller/767c9623385c6f7f811cd8452dee6ef0.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="4540e507ac29eefadc539cf6e33639ef" style="min-width: 30px; min-height: 30px; width: 341px; height: 454.667px; left: 619px; top: 245.333px;"><div class="sl-block-content" style="z-index: 13;"><img data-natural-width="675" data-natural-height="900" style="" data-src="iot-huelva-inteligente-parte-taller/a4f53df1e47b78c6682f9e3b6b741204.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="4912b7e4f601b22f80869eb1320751eb" style="min-width: 30px; min-height: 30px; width: 605.333px; height: 454px; left: 0px; top: 246px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="1200" data-natural-height="900" data-src="iot-huelva-inteligente-parte-taller/d101efa9d21a3cd6ae41a0043120b44b.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="a66c8edd7c23a256307d1930eba732bb" style="min-width: 30px; min-height: 30px; width: 299.672px; height: 225px; left: 619px; top: 14px;"><div class="sl-block-content" style="z-index: 15;"><img data-natural-width="915" data-natural-height="687" style="" data-src="iot-huelva-inteligente-parte-taller/4baeb97b57716a963e7a660d43e3fd6d.jpg"></div></div></section><section data-id="917b6519e19ea438375de2fe1f37535c"><div class="sl-block" data-block-type="text" style="width: 605px; left: 178px; top: 33px; height: auto;" data-block-id="756246155ade8918b0d4668c4a750dda"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2><span style="font-size:0.7em"><span style="color:rgb(34, 34, 34); text-align:start"><a href="http://www.thingiverse.com/thing:1481809" target="_blank">SCRU FE</a> (2016, <a href="https://twitter.com/kom_256" target="_blank">Ulises Gascón</a>)</span></span></h2>
+</div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 840px; left: 66px; top: 650px;" data-block-id="adde488f60245d6f029f336e95069d21"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<pre style="text-align:center"><span style="font-size:0.7em">Código y Documentación: <a href="https://github.com/UlisesGascon/SCRU-FE" target="_blank">Github</a> | Piezas: <a href="http://www.thingiverse.com/thing:1481809" target="_blank">Thingverse</a> | Licencia: CC-BY-SA</span></pre>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="14bfd427ee32168210076480a72e227c" style="min-width: 30px; min-height: 30px; width: 504px; height: 504px; left: 66px; top: 126px;"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="900" data-natural-height="900" data-src="iot-huelva-inteligente-parte-taller/cb766f098e4e2f8ed683f8a219ebd8ee.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="b7126e9e98430994dae9d45563d11bfa" style="min-width: 30px; min-height: 30px; width: 326.667px; height: 245px; left: 581px; top: 126px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="1200" data-natural-height="900" data-src="iot-huelva-inteligente-parte-taller/3e43d76fd0dbf5548bbc6618a0252ec0.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="a193cbc8b3418d1705407cbf1497fcae" style="min-width: 30px; min-height: 30px; width: 326.667px; height: 245px; left: 581px; top: 385px;"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="1200" data-natural-height="900" data-src="iot-huelva-inteligente-parte-taller/3d3ebaca889c94b766e6c6fca38c870f.jpg"></div></div></section><section data-id="feaa426273d26c68cb421b5d37d362d0"><div class="sl-block" data-block-type="text" style="width: 760px; left: 100px; top: 33px; height: auto;" data-block-id="54b2f7491fabe60b2d6b4e0279d25d65"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2><span style="font-size:0.7em"><span style="color:rgb(34, 34, 34); text-align:start">Batería Reactiva (2015, <a href="https://twitter.com/kom_256" target="_blank">Ulises Gascón</a>)</span></span></h2>
+</div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 881px; left: 40px; top: 651px;" data-block-id="d1395a46e4722f29d4ac5030c6d8a74b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<pre style="text-align:center"><span style="font-size:0.7em">Código y Documentación: <a href="https://github.com/UlisesGascon/SCRU-FE" target="_blank">Github</a> | Licencia: GNU GPL v3</span></pre>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="c81d2e5921309df926215fef5391280d" style="min-width: 30px; min-height: 30px; width: 358.667px; height: 269px; left: 152px; top: 361px;"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="1200" data-natural-height="900" data-src="iot-huelva-inteligente-parte-taller/74859c6c28784d84b79ec59f717a7fe3.JPG"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="01998bfdf6c5f498434d30762a9a413a" style="min-width: 30px; min-height: 30px; width: 666px; height: 245.739px; left: 152px; top: 105.63px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="851" data-natural-height="314" data-src="iot-huelva-inteligente-parte-taller/5bdd6710c7c1dc2fd6b75c077fd3a678.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="7878a4725712051563473036e9293f77" style="min-width: 30px; min-height: 30px; width: 298.598px; height: 270px; left: 520px; top: 361px;"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="710" data-natural-height="642" data-src="iot-huelva-inteligente-parte-taller/d05fce9ae6ea49089dcdf46a88fc2a2b.png"></div></div></section><section data-id="20d1401f6be6fbb098845366660d56ec"><div class="sl-block" data-block-type="image" data-block-id="8425bd439325d2d1db6f33bd47001658" style="min-width: 30px; min-height: 30px; width: 437.333px; height: 328px; left: 480px; top: 70px;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1200" data-natural-height="900" data-src="iot-huelva-inteligente-parte-taller/fed2d672dbe34c2d809cdde3c06b4bc3.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="ea5eb5d2df71a55cc406f145c8238809" style="min-width: 30px; min-height: 30px; width: 438.75px; height: 585px; left: 21px; top: 70px;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="675" data-natural-height="900" data-src="iot-huelva-inteligente-parte-taller/34dd9e8c90c28cf6e0b738392aae2c23.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="cc180498fb1b71216e26d23560a947af" style="min-width: 30px; min-height: 30px; width: 438px; height: 246.156px; left: 480px; top: 409px;"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="500" data-natural-height="281" data-src="iot-huelva-inteligente-parte-taller/ae1d45abe50f59d3130ef1b537a90bc6.gif"></div></div></section><section data-id="4bdd5a3157a6b1c03033aa8b9f914acf"><div class="sl-block" data-block-type="image" data-block-id="036ecda2aa2ad5c98c9fd57e488cc163" style="min-width: 30px; min-height: 30px; width: 485.25px; height: 647px; left: 462px; top: 27px;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="675" data-natural-height="900" data-src="iot-huelva-inteligente-parte-taller/c358f2404a5bc0dff7647612a45ee98a.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="95c3f72512131a5fadb0caff4ef4a0e5" style="min-width: 30px; min-height: 30px; width: 426px; height: 319.5px; left: 27px; top: 355px;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="1200" data-natural-height="900" data-src="iot-huelva-inteligente-parte-taller/033dcda62954c5896d8f0d15006d087f.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="f8bf83cda502c517ba95bc683d4d22b3" style="min-width: 30px; min-height: 30px; width: 426px; height: 319.5px; left: 27px; top: 27px;"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="1200" data-natural-height="900" data-src="iot-huelva-inteligente-parte-taller/fffd1a0aa73e76de38599fc633e07b23.jpg"></div></div></section><section data-id="9a9a225ee31e40bae4d0268c1a5a6589"><div class="sl-block" data-block-type="text" style="width: 800px; left: 81px; top: 33px; height: auto;" data-block-id="3885093f6b029ef66990804223468d83"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2><span style="font-size:0.7em"><span style="color:rgb(34, 34, 34); text-align:start">Reloj Binario (2015, <a href="https://twitter.com/kom_256" target="_blank">Ulises Gascón</a>)</span></span></h2>
+</div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 881px; left: 40px; top: 651px;" data-block-id="b02cd7f4b8046d1087e8e543adfb9906"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<pre style="text-align:center"><span style="font-size:0.7em">Código y Diseños: <a href="https://github.com/UlisesGascon/BCD-Binary-Clock" target="_blank">Github</a> | Introducción: <a href="http://www.blog.ulisesgascon.com/reloj-binario-con-nodejs-y-arduino/" target="_blank">Blog</a> | Licencia: GNU GPL v3</span></pre>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="cacc298d8ba20c101ab4f035e967cb7d" style="min-width: 30px; min-height: 30px; width: 698px; height: 523.5px; left: 132px; top: 107px;"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="480" data-natural-height="360" data-src="iot-huelva-inteligente-parte-taller/24fd277176f5548401d11ade645c0ce8.gif"></div></div></section><section data-id="df4707c115f84e7e47401fe68c9d6750"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 64px; height: auto;" data-block-id="d7c226250907b64631d2bbe52b9caafd"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h3><span style="font-size:0.7em"><span style="color:rgb(34, 34, 34); text-align:start"><a href="http://www.blog.ulisesgascon.com/piedra-papel-tijeras-lagarto-spock-con-arduino/" target="_blank">Pedra, papel, tijeras, lagarto, Spock</a> (2015, <a href="https://twitter.com/kom_256" target="_blank">Ulises Gascón</a>)</span></span></h3>
+</div></div>
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 881px; left: 40px; top: 651px;" data-block-id="6a79d638587834175bef0185c0dc5a02"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<pre style="text-align:center"><span style="font-size:0.7em">Código y Diseños: <a href="https://github.com/UlisesGascon/Piedra-papel-tijeras-lagarto-Spock-con-Arduino" target="_blank">Github</a> | Introducción: <a href="http://www.blog.ulisesgascon.com/piedra-papel-tijeras-lagarto-spock-con-arduino/" target="_blank">Blog</a> | Licencia: GNU GPL v3</span></pre>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="d11edadf724bbf1fc704eb4bbb0b49b4" style="min-width: 30px; min-height: 30px; width: 661.333px; height: 496px; left: 150px; top: 140px;"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="1200" data-natural-height="900" data-src="iot-huelva-inteligente-parte-taller/5847069e8614bb534fb24ecbf89f0acc.JPG"></div></div></section></section><section data-background-color="rgb(157,133,116)" data-background-image="iot-huelva-inteligente-parte-taller/54cc02d61b18df72f08965507d77c697.jpg" data-id="da443b57215d196341daf9b99a83e2bf"><div class="sl-block" data-block-type="text" style="height: auto; width: 338px; left: 577px; top: 77px;" data-block-id="920d6e9eb66283486782106772960ad0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; background-color: rgb(45, 45, 45);">
+<h1><span style="color:#FFFFFF">¡Gracias!</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 439px; left: 517px; top: 263px;" data-block-id="586def918b162031064beba8b59bfcaa"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(255, 255, 255); padding: 10px; background-color: rgb(45, 45, 45);">
+<blockquote>
+<p><span style="color:#FFFFFF">Los sueños son sumamente importantes. Nada se hace sin que antes se imagine.  </span></p>
+
+<p><span style="color:#FFFFFF">- George Lucas</span></p>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 106.488px; height: 37px; left: 854px; top: 663px;" data-block-id="d497ff94aa3c40ebd9bad0458e102094"><div class="sl-block-content" style="z-index: 13;"><img data-natural-width="118" data-natural-height="41" style="" data-src="iot-huelva-inteligente-parte-taller/f3699697921758db6f7b7847580a54ae.png"></div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":652786,"slug":"iot-huelva-inteligente-parte-taller","title":"IOT Huelva Inteligente (Taller)","description":"¿Qué aprenderá? En este seminario, de 10:00 a 14:00, veremos, partiendo de una base sencilla en la que no es necesario tener conocimiento previo; qué es el IoT, el alcance, así como su potencialidad y proyección. Una charla \"in crescendo\" de la mano de Ulises Gascón, que culminará en horario de tarde, de 16:00 a 18:00, con el Taller IoT, en el que se proporcionará un Kit de Arduino para cada grupo y se realizarán prácticas introductorias cuyo objetivo será el acercamiento al IoT de primera mano. http://bit.ly/iot-huelva  ","width":960,"height":700,"margin":0.05,"visibility":"all","published_at":"2016-04-15T20:19:48.789Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/4e14441ee969bd447e555ca2320ac147/thumb.jpg","view_count":1059,"user":{"id":479298,"username":"ulisesgascon","name":"Ulises Gascon Gonzalez","description":"#OpenSource Developer | Senior Software Engineer \r\nGuideSmiths| #GDE Firebase | Co-fundador Open Source Weekends (OSW) | Profe Fictizia | Prev: Google, IBM | #Maker","thumbnail_url":"https://lh6.googleusercontent.com/-vAQb4yzFJ2I/AAAAAAAAAAI/AAAAAAAACMs/s77kk0urspk/photo.jpg?sz=50","account_type":"enterprise","team_id":1662,"settings":{"id":320998,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":true,"default_deck_tag_id":null},"membership":{"role":"owner","manager":true,"activated":true}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":null,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":57,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":null,"data_updated_at":1491832225029,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":null,"notes":{"eaf908e22c2bb6f00dced7ccee2fbeee":"10 Formas de destruir un Arduino\nhttp://www.trastejant.es/blog/10-formas-de-destruir-un-arduino/","e53029bca65cb2dddbd04450c1d0a120":"IDEAS:\n\n- Cambiar tiempo de espera","91169b94337e1cef341bff64a18c5d25":"IDEAS:\n\n- Cambia de PIN (esquema y diseño)"}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+	</body>
+</html>
